@@ -1,0 +1,2 @@
+# Discord-Gyazo-Uploader
+Discordbotのトークンとgyazoのアプリケーショントークンを入れたら使えます。<br>スラッシュコマンドです送るとurlが返ってきます。
