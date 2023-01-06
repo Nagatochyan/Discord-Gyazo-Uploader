@@ -14,7 +14,7 @@ async def convert_to_gyazo(ctx,file: discord.Attachment):
         aaa.write(image)
     await ctx.respond("uploading...")
     URL="https://upload.gyazo.com/api/upload"
-    headers = {'Authorization': "Bearer {}".format('GYAZO APPLICATION TOKEN)}
+    headers = {'Authorization': "Bearer {}".format('GYAZO APPLICATION TOKEN')}
     with open(file_name,"rb") as f:
         files = {'imagedata':f.read()}
         response = requests.request('post', URL, headers=headers, files=files)
