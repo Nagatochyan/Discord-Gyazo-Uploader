@@ -18,5 +18,7 @@ async def convert_to_gyazo(ctx,file: discord.Attachment):
     with open(file_name,"rb") as f:
         files = {'imagedata':f.read()}
         response = requests.request('post', URL, headers=headers, files=files)
-        await ctx.respond(response.text[response.text.find('"url":"'):response.text.find('","access_policy":null}')])
+        asdfsghf=response.text[response.text.find('"url":"'):response.text.find('","access_policy":null}')]
+        dfgrhty=(asdfsghf.replace('"url":"',''))
+        await ctx.respond(dfgrhty)
 client.run(TOKEN)
